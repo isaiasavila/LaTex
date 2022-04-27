@@ -2,16 +2,196 @@
 \usepackage[top=2cm,bottom=2cm,left=2cm,right=2cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath,amsfonts,amssymb,verbatim}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[portuguese]{babel}
 \DeclareMathOperator{\sen}{sen}
 \DeclareMathOperator{\cossec}{cossec}
 \DeclareMathOperator{\tg}{tg}
-
+\newcommand{\limite}{\displaystyle\lim}
+\newcommand{\integral}{\displaystyle\int}
+\newcommand{\somatorio}{\displaystyle\sum}
 \begin{document}
+
+\begin{center}
+\begin{tabular}{lp{.8\textwidth}}
+\hline
+	\begin{tabular}{c}\includegraphics[scale=.25]{Nova Imagem de Bitmap.png}\end{tabular}&
+	\begin{tabular}{r}
+		Circunferência \\ 
+		isaiasavilasantos@gmail.com.br \\
+		Professor Isaías Ávila
+	\end{tabular}
+
+\end{tabular}
+\end{center}
+
+\begin{enumerate}
+\item A tabela \ref{tabela-der} abaixo representa as derivadas básicas:
+
+\centering
+\begin{tabular}{|l|r|}
+	\hline
+	Função & Derivada \\ \hline
+	$f(x)=x^n$ & $f'(x)=nx^{n-1}$ \\ \hline
+	$f(x)=Log_x a$ & $f'(x)=\dfrac{1}{(\ln a)x}$ \\ \hline
+	
+\end{tabular}
+
+\begin{table}[!htb]
+\begin{center}
+\begin{tabular}{||c||p{10cm}||}
+	\hline \hline
+	Função & Derivada \\ \hline \hline
+	$f(x)=x^n$ & $f'(x)=nx^{n-1}$ \\ \hline \hline
+	$f(x)=Log_x a$ & $f'(x)=\dfrac{1}{(\ln a)x}$ \\ \hline \hline
+	
+\end{tabular}
+\caption{Tabela básica de derivadas.}
+\label{tabela-der}
+\end{center}
+\end{table}
+
+\end{enumerate}
+
+\begin{enumerate}
+\item Calcule o valor da figura \ref{meu-rotulo}.
+\begin{figure}[!htb]
+\includegraphics[scale=.25]{Nova Imagem de Bitmap.png}
+\caption{Questão sobre circunferência.}
+\label{meu-rotulo}
+\end{figure}
+
+\item Calcule o valor da figura \ref{meu-outro-rotulo}.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=.15]{Nova Imagem de Bitmap.png}
+\caption{Questão sobre circunferência.}
+\label{meu-outro-rotulo}
+\end{figure}
+\end{enumerate}
 
 \begin{enumerate}
 \begin{comment}
-Comentário, muito útil para 
+Tags para cálculo
 \end{comment}
+\item Calcule os limites abaixo.
+\begin{enumerate}
+\item $\limite_{x \to 1} \dfrac{x^2 - 1}{x-1}$
+\item $\displaystyle\lim_{x \to 1} \frac{x^2 - 1}{x-1}$
+\end{enumerate}
+\item Seja a função definida por $f(x)=x^2- \sqrt{x}$. Calcule as derivadas abaixo.
+\begin{enumerate}
+\item $f'$
+\item $f''$
+\item $f'''$
+\item $f^{(iv)}$
+\item $f^{(v)}$
+\item $\dfrac{df}{dx}$
+\item $\dfrac{d^2f}{dx^2}$
+\item $\dfrac{d^3f}{dx^3}$
+\end{enumerate}
+\item Seja a função definida por $f(x,\,y)=yx^2- \sqrt{x} + y^3$. Calcule as derivadas abaixo.
+\begin{enumerate}
+\item $\dfrac{\partial f}{\partial x}$
+\item $\dfrac{\partial^2f}{\partial x^2}$
+\item $\dfrac{\partial^3f}{\partial x^3}$
+\item $\dfrac{\partial }{\partial x}\left(\dfrac{\partial f}{\partial y}\right)$
+\end{enumerate}
+
+\item Calcule as integrais abaixo
+\begin{enumerate}
+\item $\int_1^5 x^2\cos x\,dx$
+\item $$\int_1^7 x^2\cos x\,dx$$
+\item $\displaystyle\int_2^4 x^3\cos x\,dx$
+\item $\integral_0^4 x^2\cos x\,dx$
+\end{enumerate}
+
+\item Somatório
+\begin{enumerate}
+\item $\sum_{i=1}^n a_i$
+\item $$\sum_{i=1}^n a_i$$
+\item $\displaystyle\sum_{i=1}^n a_i$
+\item $\somatorio_{i=1}^n a_i$
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\begin{comment}
+Tags para geometria analítica
+\end{comment}
+\item Seja o segmento $\overline{AB}$. A partir dele podemos definir os segmentos orientados $\overrightarrow{AB}$
+e $\overrightarrow{BA}$. Seja $\vec{AB}$ e $\vec{u}$.
+\item Sejam os vetores $\vec{u} = (1;\,-1;\,2)$ e $\vec{u} = (2;\,5;\,-1)$. Calcule o seguinte.
+\begin{enumerate}
+\item $\vec{u} \cdot \vec{v}$
+\item $\langle \vec{u} \cdot \vec{v} \rangle$
+\item $\vec{u} \times \vec{v}$
+\item $|\vec{u}|$ $\|\vec{u}\|$
+\item $\left\|\overrightarrow{AB}\right\|$
+\end{enumerate}
+\begin{enumerate}
+\item Verifique se $\vec{u} \perp \vec{v}$.
+\item Sejam os planos $\alpha : x-2y+6z-3=0$ $\beta : x-2y+6z-3=0$.
+\item Sejam os vetores $\vec{u}=(x_0;\,y_0;\,z_0)$ e $\vec{v}=(x_1;\,y_1;\,z_1)$. Temos que:
+$$
+\vec{u} \times \vec{v} =
+\begin{vmatrix}
+\vec{i} & \vec{j} & \vec{k}\\
+x_0 & y_0 & z_0\\
+x_1 & y_1 & z_1
+\end{vmatrix}
+$$
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
+\item Considere a matriz
+$\begin{bmatrix}
+ 1 & 10 & -5 \\
+ 6 & 7 & 8
+ \end{bmatrix}
+$
+\item Determine $x$, $y$ e $z$ na equação
+\item Considere a matriz $m\times n$ dada por
+$\begin{bmatrix}
+1 & -2 & 4  \\
+6 & 8 & 10  \\
+3 & 7 & 13
+ \end{bmatrix}
+ =
+  \begin{bmatrix}
+ x\\
+ y\\
+ z
+ \end{bmatrix}
+ \begin{bmatrix}
+ 2\\
+ 10\\
+ 6
+ \end{bmatrix}
+$
+\item Calcule o determinante
+$\begin{vmatrix}
+ 1 & 10 & -5 \\
+ 6 & 7 & 8 \\
+ 7 & 45 & 12
+ \end{vmatrix}
+$
+\item Considere a matriz
+$M = \begin{bmatrix}
+ 1 & 10 & -5 \\
+ 6 & 7 & 8
+ \end{bmatrix}
+$. Calcule o que for solicitado abaixo.
+\begin{enumerate}
+\item $\det M$
+\item $M^{-1}$
+\item $M^T$
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}
 \item Seja a função $f: \mathbb{R} \to \mapsto \mathbb{R}$ definida por $f(x)= \dfrac{1}{2}x^2 - 2x + 1$
 
 \item Seja a função $$f: \mathbb{R} \to \mathbb{R}$$
@@ -108,12 +288,12 @@ A solução dessa equação é dada por
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 \begin{enumerate}
-\item Vov\' o 
+\item Vov\^ o 
 \begin{enumerate}
 \item Gustavo
 \item João
 \end{enumerate}
-\item Vov\^ o.
+\item Vov\' o.
 \begin{itemize}
 \item Edelvira
 \item Julia
