@@ -1,0 +1,52 @@
+\documentclass {beamer}
+\usetheme{PaloAlto}
+\setbeamercovere{transparent}
+
+\usepackage[utf8]{inputenc}
+
+\title{Beamer.}
+\author[Avila]{Isaías Avila dos Santos}
+\institute[IAS]{isaiasavilasantos@gmail.com}
+\date{2024}
+\logo{\includegraphics[scale=0.4]{imagens/logotipo.png}}
+
+\begin{document}
+  \begin{frame}
+    \titlepage
+  \end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Uncover}
+    \uncover<1>{Vamos resolver uma equação do segundo grau:
+    $$ax^2 + bx + c = 0$$}
+    \uncover<2>{Primeiro identifique os coeficientes $a$, $b$ e $c$.}
+
+    \uncover<3>{Em seguida, calcule o valor de:
+    $$\Delta = b^2 - 4ac$$}
+
+    Calcule a primeira raiz:
+    $$x 1 = \frac{-b + \sqrt{\Delta}}{2a}$$ \pause
+
+    Calcule a segunda raiz:
+    $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Visible}
+    \visible<1>{Vamos resolver uma equação do segundo grau:
+    $$ax^2 + bx + c = 0$$}
+    \visible<2>{Primeiro identifique os coeficientes $a$, $b$ e $c$.}
+
+    \visible<3>{Em seguida, calcule o valor de:
+    $$\Delta = b^2 - 4ac$$}
+
+    Calcule a primeira raiz:
+    $$x 1 = \frac{-b + \sqrt{\Delta}}{2a}$$ \pause
+
+    Calcule a segunda raiz:
+    $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+\end{frame}
+
+\end{document}
