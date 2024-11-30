@@ -17,7 +17,7 @@
 
 \begin{frame}
   \frametitle{Esse é o título do quadro.}
-  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Uncover}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Uncover - usando transparência}
     \uncover<1>{Vamos resolver uma equação do segundo grau:
     $$ax^2 + bx + c = 0$$}
     \uncover<2>{Primeiro identifique os coeficientes $a$, $b$ e $c$.}
@@ -30,6 +30,23 @@
 
     Calcule a segunda raiz:
     $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Uncover - usando transparência parcial}
+    \uncover<1-3,5>{Vamos resolver uma equação do segundo grau:
+    $$ax^2 + bx + c = 0$$}
+    \uncover<2->{Primeiro identifique os coeficientes $a$, $b$ e $c$.}
+
+    \uncover<3>{Em seguida, calcule o valor de:
+    $$\Delta = b^2 - 4ac$$}
+
+    \uncover<4->{Calcule a primeira raiz:
+    $$x 1 = \frac{-b + \sqrt{\Delta}}{2a}$$ \pause}
+
+    \uncover<5->{Calcule a segunda raiz:
+    $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$}
 \end{frame}
 
 \begin{frame}
@@ -47,6 +64,106 @@
 
     Calcule a segunda raiz:
     $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Only}
+    \only<1>{Vamos resolver uma equação do segundo grau:
+    $$ax^2 + bx + c = 0$$}
+    \only<2>{Primeiro identifique os coeficientes $a$, $b$ e $c$.}
+
+    \only<3>{Em seguida, calcule o valor de:
+    $$\Delta = b^2 - 4ac$$}
+
+    Calcule a primeira raiz:
+    $$x 1 = \frac{-b + \sqrt{\Delta}}{2a}$$ \pause
+
+    Calcule a segunda raiz:
+    $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Itemize, frase a frase}
+    \begin{itemize}
+
+        \item<1- | alert@1> Vamos resolver uma equação do segundo grau:
+        $$ax^2 + bx + c = 0$$
+
+        \item<2- | alert@2> Primeiro identifique os coeficientes $a$, $b$ e $c$.
+    
+        \item<3- | alert@3> Em seguida, calcule o valor de:
+        $$\Delta = b^2 - 4ac$$
+    
+        \item<4- | alert@4> Calcule a primeira raiz:
+        $$x 1 = \frac{-b + \sqrt{\Delta}}{2a}$$ \pause
+    
+        \item<5- | alert@5> Calcule a segunda raiz:
+        $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - Itemize, padronizado}
+    \begin{itemize}[<+- | alert@+>]
+        \item posso usar os modificadores usados acima: alert, only, uncover e visible
+
+        \item Vamos resolver uma equação do segundo grau:
+        $$ax^2 + bx + c = 0$$
+
+        \item Primeiro identifique os coeficientes $a$, $b$ e $c$.
+    
+        \item Em seguida, calcule o valor de:
+        $$\Delta = b^2 - 4ac$$
+    
+        \item Calcule a primeira raiz:
+        $$x 1 = \frac{-b + \sqrt{\Delta}}{2a}$$ \pause
+    
+        \item Calcule a segunda raiz:
+        $$x 2 = \frac{-b - \sqrt{\Delta}}{2a}$$
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - block}
+
+    \begin{block}<1-2>{Título 1}
+      Bloco 1
+    \end{block}
+
+    \begin{block}<2>{Título 2}
+      Bloco 2
+    \end{block}
+
+    \begin{block}<3>{Título 3}
+      Bloco 3
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Esse é o título do quadro.}
+  \framesubtitle{Esse é o subtítulo do quadro. Sobreposições de conteúdos Beamer - figure}
+
+    Aqui vem um texto.
+    \begin{figure}
+      \centering
+      \includegraphics<1>[scale=0.25]{imagens/imagem1.png}
+      \includegraphics<2>[scale=0.25]{imagens/imagem3.png}
+      \includegraphics<3>[scale=0.25]{imagens/imagem4.png}
+    \end{figure}
+
+    \begin{figure}
+      Bloco 2
+    \end{figure}
+
+    \begin{figure}
+      Bloco 3
+    \end{figure}
+
 \end{frame}
 
 \end{document}
