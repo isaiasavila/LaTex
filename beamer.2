@@ -1,0 +1,179 @@
+%Comentários aqui
+\documentclass {beamer}
+\usetheme{Berlin}
+\setbeamercovered{transparent}
+
+\usepackage[utf8]{inputenc}
+
+\title{Beamer. Paderia usar o tema Frankfurt, AnnArbor}
+\author[Avila]{Isaías Avila dos Santos}
+\institute[IAS]{isaiasavilasantos@gmail.com}
+\date{2024}
+\logo{\includegraphics[scale=0.4]{imagens/logotipo.png}}
+
+\AtBeginSection[]{
+\begin{frame}
+\tableofcontents[currentsection]
+\end{frame}
+}
+
+\AtBeginSubSection[]{
+\begin{frame}
+\tableofcontents[currentsubsection, hideallsubsections]%hideothersubsections
+\end{frame}
+}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle(Sumário}
+  \tableofcontents[part=1]
+\end{frame}
+
+\begin{frame}
+  \frametitle(Sumário}
+  \tableofcontents[part=2]
+\end{frame}
+
+\begin{frame}
+  \frametitle(Sumário}
+  \tableofcontents[pausesections, pausesubsections]
+\end{frame}
+
+\part{Revisão}
+\section{Uma introdução com título grande}
+\begin{frame}
+\frametitle{Aqui é o Título}
+\framesubtitle{Aqui é o Subtítulo}
+Esse é o quadro 1.
+\end{frame}
+
+\section{Metodologia}
+\subsection{Uma subseção da metodologia}
+\begin{frame}
+\frametitle{Aqui é o Título}
+\framesubtitle{Aqui é o Subtítulo}
+Esse é o quadro 2. \cite{meuartigo}
+\end{frame}
+
+\subsection{Uma outra subseção da metodologia}
+\begin{frame}
+\frametitle{Aqui é o Título}
+\framesubtitle{Aqui é o Subtítulo}
+Esse é o quadro 3.
+\end{frame}
+
+\section{Discussão}
+\subsection{Uma subseção da Discussão}
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 4. \cite{meulivro}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 5.
+\end{frame}
+
+\subsection{Uma outra subseção da Discussão}  
+  \begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 6.
+  \end{frame}
+\subsubsection{Uma subsubseção da Discussão}  
+  \begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 6.1.
+  \end{frame}
+
+    \section{Conclusão}
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 7.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 8.
+\end{frame}
+
+\part{Aula de hoje}
+\section{Uma introdução com título grande}
+\begin{frame}
+\frametitle{Aqui é o Título}
+\framesubtitle{Aqui é o Subtítulo}
+Esse é o quadro 1.
+\end{frame}
+
+\section{Metodologia}
+\subsection{Uma subseção da metodologia}
+\begin{frame}
+\frametitle{Aqui é o Título}
+\framesubtitle{Aqui é o Subtítulo}
+Esse é o quadro 2. \cite{meuartigo}
+\end{frame}
+
+\subsection{Uma outra subseção da metodologia}
+\begin{frame}
+\frametitle{Aqui é o Título}
+\framesubtitle{Aqui é o Subtítulo}
+Esse é o quadro 3.
+\end{frame}
+
+\section{Discussão}
+\subsection{Uma subseção da Discussão}
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 4. \cite{meulivro}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 5.
+\end{frame}
+
+\subsection{Uma outra subseção da Discussão}  
+  \begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 6.
+  \end{frame}
+\subsubsection{Uma subsubseção da Discussão}  
+  \begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 6.1.
+  \end{frame}
+
+    \section{Conclusão}
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 7.
+\end{frame}
+
+\begin{frame}
+  \frametitle{Aqui é o Título}
+  \framesubtitle{Aqui é o Subtítulo}
+  Esse é o quadro 8.
+\end{frame}
+
+\section*{Referências}
+\begin{frame}
+  \bibliographystyle{plain}%apalike
+  \bibliography{referencias.bib}
+  Esse é o quadro 8.
+\end{frame}
+
+\end{document}
