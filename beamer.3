@@ -1,0 +1,106 @@
+\documentclass {beamer}
+\usetheme{Berlin}
+\setbeamercovered{transparent}
+\usepackage[utf8]{inputenc}
+
+\title{Beamer. Poderia usar o tema Frankfurt, AnnArbor}
+\author[Avila]{Isaías Avila dos Santos}
+\institute[IAS]{isaiasavilasantos@gmail.com}
+\date{2024}
+%\logo{\includegraphics[scale=0.4]{imagens/logotipo.png}}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 1}
+  \framesubtitle{Subtítulo quadro 1} 
+  \begin{itemize}
+      \item<1->sLIDE 1.1
+      \item<2->sLIDE 1.2
+      \item<3->sLIDE 1.3
+      \item<4->sLIDE 1.4
+  \end{itemize}
+  \hypertarget<2>{segundo-slide}{}
+  \hyperlink{segundo-slide}{\beamerbutton{Segundo slide (quadro 1)}}
+  \hyperlink{segundo-slide}{\beamerbutton{Segundo slide (quadro 1)}}
+  \hyperlink{segundo-slide}{\beamergotobutton{Segundo slide (quadro 1)}}
+  \hyperlink{segundo-slide}{\beamerskipbutton{Segundo slide (quadro 1)}}
+  \hyperlink{segundo-slide}{\beamerreturnbutton{Segundo slide (quadro 1)}}
+  \hyperlinkslidenext{próximo slide}  \hyperlinkslideprev{slide anterior}
+  \hyperlinkframestart{início quadro}  \hyperlinkframeend{fim quadro}
+  \hyperlinkframestartnext{início quadro (próximo)}  \hyperlinkframeendprev{fim quadro (anterior)}
+  \hyperlinkpresentationstart{Primeiro slide}  \hyperlinkpresentationend{último slide}
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 2}
+  \framesubtitle{Subtítulo quadro 2}
+  \begin{itemize}
+      \item<1->sLIDE 2.1
+      \item<2->sLIDE 2.2
+      \item<3->sLIDE 2.3
+      \item<4->sLIDE 2.4
+  \end{itemize}
+  \hypertarget<3>{terceiro-slide}{}
+  \hyperlink{terceiro-quadro<4>}{Slide 4 (quadro 3)}
+\end{frame}
+
+\begin{frame}<1-2>[label=terceiro-quadro]
+  \frametitle {Título quadro 3}
+  \framesubtitle{Subtítulo quadro 3}
+  \begin{itemize}
+      \item<1->sLIDE 3.1
+      \item<2->sLIDE 3.2
+      \item<3->sLIDE 3.3
+      \item<4->sLIDE 3.4
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 4}
+  \framesubtitle{Subtítulo quadro 4}
+  \begin{itemize}
+      \item<1->sLIDE 4.1
+      \item<2->sLIDE 4.2
+      \item<3->sLIDE 4.3
+      \item<4->sLIDE 4.4
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 5}
+  \framesubtitle{Subtítulo quadro 5}
+  \begin{itemize}
+      \item<1->sLIDE 5.1
+      \item<2->sLIDE 5.2
+      \item<3->sLIDE 5.3
+      \item<4->sLIDE 5.4
+  \end{itemize}
+\end{frame}
+
+\againframe<3->{terceiro-quadro}
+
+\begin{frame}
+  \frametitle {Título quadro 7}
+  \framesubtitle{Subtítulo quadro 7}
+  \hypersetup{linkbordercolor={1 0.75 0.5}}% yellow, green
+    \framezoom<1><2>[border](3.5cm, 1.75cm)(2.5cm, 1cm)
+    \framezoom<1><3>[border](3cm, 2.75cm)(2cm, 2cm)
+    \begin{figure}
+    \includegraphics[scale=.15]{picture.jpg}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 8}
+  \framesubtitle{Subtítulo quadro 8}
+  \hypersetup{linkbordercolor={1 0.75 0.5}}% yellow, green
+    \framezoom<1><2>[border=2](3.5cm, 1.75cm)(2.5cm, 1cm)
+    \framezoom<1><3>[border=3](3cm, 2.75cm)(2cm, 2cm)
+    Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório. Aqui tem texto aleatório.
+\end{frame}
+
+\end{document}
