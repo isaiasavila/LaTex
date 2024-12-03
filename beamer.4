@@ -1,0 +1,67 @@
+\documentclass {beamer}
+\usetheme{Berlin}
+\setbeamercovered{transparent}
+\usepackage[utf8]{inputenc}
+\usepackage{multimedia}
+\title{Beamer. Poderia usar o tema Frankfurt, AnnArbor}
+\author[Avila]{Isaías Avila dos Santos}
+\institute[IAS]{isaiasavilasantos@gmail.com}
+\date{2024}
+%\logo{\includegraphics[scale=0.4]{imagens/logotipo.png}}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 1}
+  \framesubtitle{Subtítulo quadro 1}
+  \movie[width=160px, height=90px, externalviewer]{Assistir}{video_qualquer.mp4}
+  \sound[inlinesound]{Tocar}{audio_qualquer.mp3}
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 2}
+  \framesubtitle{Subtítulo quadro 2}
+  \begin{center}
+  \movie[width=160px, height=90px, showcontrols]{\includegraphics[width=160px, height=90px]{abertura.png}}{video_qualquer.mp4}%\movie[width=160px, height=90px, loop]
+  \end{center}
+  \sound[mixsound=true]{Tocar}{audio_qualquer.mp3}%\sound[loop]
+\end{frame}
+
+\newcount{\nomedocontador}
+\newdimen{\nomedadimensao}
+\begin{frame}
+  \frametitle {Título quadro 3}
+  \framesubtitle{Subtítulo quadro 3}
+  \animate<1-3>
+  \animatevalue<1-3>{\nomedocontador}{0}{100}
+  \animatevalue<1-3>{\nomedadimensao}{0cm}{8cm}
+  \textcolor{red!\the\nomedocontador!black}{Aqui vem um texto.}
+  {\hspace{\nomedadimensao}Aqui vem um texto.}
+\end{frame}
+
+\begin{frame}
+  \frametitle {Título quadro 4}
+  \framesubtitle{Subtítulo quadro 4}
+  \transdissolve[duration=2]<2>
+  \transblindshorizontal<3>
+  \transblindsvertical<4>
+  \transboxin<5>
+  \transboxout<6>
+  \transglitter<7>
+  \transwipe[direction=90]<8>
+  \begin{itemize}
+  \item<1-> Slide 3.1
+  \item<2-> Slide 3.2
+  \item<3-> Slide 3.3
+  \item<4-> Slide 3.4
+  \item<5-> Slide 3.5
+  \item<6-> Slide 3.6
+  \item<7-> Slide 3.7
+  \item<8-> Slide 3.8
+  \end{itemize}
+\end{frame}
+
+\end{document}
