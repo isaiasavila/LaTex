@@ -1,0 +1,125 @@
+\documentclass {beamer}
+%\usetheme{Berlin}
+\useoutertheme{infolines}
+\useoutertheme{tree}
+\usepackage{mathptmx}
+\usefonttheme{serif}
+\useinnertheme[shadow=true]{rounded}
+%\useinnertheme{circles}
+%\usecolortheme{dolphin}
+\definecolor{minhacor}{rgb}{1, 0.75, 0.5}
+\definecolor{minhaotacor}{RGB}{39, 78, 19}
+\setbeamercolor{normal text}{fg=minhaotacor, bg=white}
+\setbeamercolor{alerted text}{fg=minhacor, bg=white}
+\setbeamercolor{title}{fg=black!90}
+\setbeamercolor{author}{fg=black!70}
+\setbeamercolor{institute}{fg=yellow!90}
+\setbeamercolor{date}{fg=green!80}
+\setbeamercolor{frametitle}{fg=blue!90}
+\setbeamercolor{structure}{fg=red!70}
+\setbeamercolor{block body}{fg=white, bg=green!90}
+\setbeamercolor{block title}{fg=green, bg=green!80}
+\setbeamercolor{math text inlined}{fg=black!80}
+\setbeamercolor{math text displayed}{fg=black!70}
+\setbeamercolor{normal text in math text}{fg=black!60}
+\setbeamercolor{section in head/foot}{fg=black, bg=green!80}
+\setbeamercolor{subsection in head/foot}{fg=black, bg=green!60}
+\setbeamercolor{palette primary}{fg=minhacor, bg=gray!90}
+\setbeamercolor{palette secondary}{fg=minhacor, bg=gray!80}
+\setbeamercolor{palette tertiary}{fg=minhacor, bg=gray!60}
+\setbeamercolor{palette quartenary}{fg=minhacor, bg=gray!40}
+\setbeamertemplate{footline}{
+\begin{centering}
+\insertframenumber / \inserttotalframenumber \par
+\end{centering}
+}
+% Duplicado o efeito? Vale o último?
+%\setbeamercolor{page in footline}{fg=minhaotacor, bg=gray!90}
+%\setbeamertemplate{footline}{
+%\begin{beamercolorbox}[sep=0.5mm, center]{page in footline}
+%\insertframenumber / \inserttotalframenumber \par
+%\end{beamercolorbox}
+%}
+\setbeamercolor{button border}{fg=cyan}
+\setbeamercolor{button}{fg=minhacor!70, bg=gray!40}
+\renewcommand{\insertgotosymbol}{$\curvearrowleft$}
+\renewcommand{\insertskipsymbol}{$\Rightarrow$}
+%\setbeamerfont{frametitle}{shape=\itshape, series=\bfseries, family=\rmfamily, size=\huge}
+\setbeamerfont{frametitle}{shape=\itshape, series=\bfseries, family=\rmfamily, size={\fontsize{20pt}{lem}}}
+\setbeamercovered{transparent}
+\usecolortheme{orchid}
+\usefonttheme{serif}
+\setbeamercovered{transparent}
+\usepackage[utf8]{inputenc}
+\usepackage{multimedia}
+\title{Beamer}
+\author[Avila]{Isaías Avila dos Santos}
+\institute[IAS]{isaiasavilasantos@gmail.com}
+\date{2024}
+%\logo{\includegraphics[scale=0.4]{imagens/logotipo.png}}
+
+\begin{document}
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\section{Seção 1}
+\subsection{Subseção 1.1}
+\begin{frame}
+\frametitle {Título quadro 1.1}
+\framesubtitle{Subtítulo quadro 1.1}
+\beamerbutton{Um texto} \beamergotobutton{Um texto} \beamerskipbutton{Um texto}
+Um texto normal. \alert{Um texto alerta.}
+$$\int_a^b f(x)\,dx = F(b) - F(a), \text{ com } F'(x) = f(x)$$
+\begin{itemize}
+\item Aqui vem um item
+\item Aqui vem um outro item
+\end{itemize}
+\begin{enumerate}
+\item Aqui vem um item
+\item Aqui vem um outro item
+\end{enumerate}
+\begin{block}{Título do bloco}
+Texto no corpo do bloco.
+\end{block}
+\end{frame}
+\subsection{Subseção 1.2}
+\begin{frame}
+\frametitle {Título quadro 1.2}
+\framesubtitle{Subtítulo quadro 1.2}
+Um texto normal. \alert{Um texto alerta.}
+$$\int_a^b f(x)\,dx = F(b) - F(a), \text{ com } F'(x) = f(x)$$
+\begin{itemize}
+\item Aqui vem um item
+\item Aqui vem um outro item
+\end{itemize}
+\begin{enumerate}
+\item Aqui vem um item
+\item Aqui vem um outro item
+\end{enumerate}
+\begin{block}{Título do bloco}
+Texto no corpo do bloco.
+\end{block}
+\end{frame}
+
+\section{Seção 2}
+\subsection{Subseção 2.1}
+\begin{frame}
+\frametitle {Título quadro 2.1}
+\framesubtitle{Subtítulo quadro 2.1}
+Um texto normal. \alert{Um texto alerta.}
+$$\int_a^b f(x)\,dx = F(b) - F(a), \text{ com } F'(x) = f(x)$$
+\begin{itemize}
+\item Aqui vem um item
+\item Aqui vem um outro item
+\end{itemize}
+\begin{enumerate}
+\item Aqui vem um item
+\item Aqui vem um outro item
+\end{enumerate}
+\begin{block}{Título do bloco}
+Texto no corpo do bloco.
+\end{block}
+\end{frame}
+
+\end{document}
